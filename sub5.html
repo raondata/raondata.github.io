@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>라온데이터</title>
+</head>
+
+<body>
+    <div class="m_head">
+        <div class="flex_box">
+            <h1 class="logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고" width="115"></a></h1>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <ul class="m_head_top">
+                    <li><a href="./index.html"><img src="./images/home.png" alt="홈" width="20"></a></li>
+                </ul>
+                <ul class="m_head_list">
+                    <li>
+                        <a href="./sub1.html">
+                            <p>인공지능 컨설팅</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub2.html">
+                            <p>팀</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub3.html">
+                            <p>고객사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub4.html">
+                            <p>협력기관</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5.html">
+                            <p>프로젝트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub6.html">
+                            <p>연구성과</p>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="location.href='./sub7.html';">문의하기</button>
+            </div>
+            <a href="#0" class="opennav"></a>
+        </div>
+
+        <script>
+            $(function() {
+                $('.opennav').click(function() {
+                    $('.nav_bg').show();
+                    $('html,body').css({
+                        'overflow': "hidden"
+                    });
+                    $('.closebtn').css({
+                        'right': "295px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'right': "0"
+                    });
+                });
+            });
+            $(function() {
+                $('.closebtn').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+            $(function() {
+                $('.sidenav ul.m_head_list li a').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+        </script>
+        <div class="nav_bg"></div>
+    </div>
+    <header>
+        <div class="inner">
+            <h2 class="logo logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h2>
+            <div class="menu_box">
+                <ul class="l_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./sub1.html">인공지능 컨설팅</a></li>
+                    <li><a href="./sub2.html">팀</a></li>
+                    <li><a href="./sub3.html">고객사</a></li>
+                    <li><a href="./sub4.html">협력기관</a></li>
+                    <li><a href="./sub5.html">프로젝트</a></li>
+                    <li><a href="./sub6.html">연구성과</a></li>
+                    <li><a href="./sub7.html">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sub_ct1">
+        <div class="inner_1280">
+            <div class="title">
+                <h4>Our Projects</h4>
+                <p>실생활에 구현되는 AI 기술, RAONDATA는 가능성을 현실로 만들어 나갑니다</p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_ct2">
+        <div class="projects">
+            <div class="inner_1280">
+                <div class="flex_box">
+                    <div>
+                        <div class="img">
+                            <img src="./images/project1.png" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>AI기반 가짜뉴스 탐지 세계 경진대회 2위</h5>
+                            <p>기간: 2021년 6월</p>
+                            <p>협력연구기관: 성균관대학교</p>
+                            <p>결과물: 가짜뉴스 탐지 모델</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>AI기반 가짜뉴스 탐지 세계 경진대회 2위</h5>
+                                <p>기간: 2021년 6월</p>
+                                <p>협력연구기관: 성균관대학교</p>
+                                <p>결과물: 가짜뉴스 탐지 모델</p>
+                                <p class="sub">
+                                    경량화된 기계학습 기법만을 활용하여 우수한 수준의 가짜뉴스 전파 탐지율을 보일 수 있었습니다. 이는 조기에 정보 전파 차단이 필요한 가짜뉴스 대응에 실제적인 도움이 될 것입니다.
+                                </p>
+                                <a href="https://www.etnews.com/20210615000045">관련기사 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="./images/project2.png" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>망막질환 분류 딥러닝 모델 개발</h5>
+                            <p>기간: 2020년 1월 ~ (현재)</p>
+                            <p>협력연구기관: 한길안과병원</p>
+                            <p>결과물: 망막질환 분류 딥러닝 모델</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>망막질환 분류 딥러닝 모델 개발</h5>
+                                <p>기간: 2020년 1월 ~ (현재)</p>
+                                <p>협력연구기관: 한길안과병원</p>
+                                <p>결과물: 망막질환 분류 딥러닝 모델</p>
+                                <p class="sub">
+                                    SD-OCT(광간섭 단층촬영) 이미지를 활용하여 여러가지 망막질환을 분류하는 딥러닝 모델을 개발하였습니다. 해당 모델은 실제 망막전문의와의 비교에서 2%가량 높은 정확도를 보였습니다.
+                                </p>
+                                <a href="https://www.nature.com/articles/s41598-020-75816-w">관련논문 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flex_box">
+                    <div>
+                        <div class="img">
+                            <img src="./images/project3.jpg" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>인공지능 무용 교육 시스템 개발 및 운영</h5>
+                            <p>기간: 2021년 11월 ~ 2021년 2월</p>
+                            <p>고객사: 사단법인 트러스트무용단</p>
+                            <p>결과물: 인공지능 무용교육 시스템(웹)</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>인공지능 무용 교육 시스템 개발 및 운영</h5>
+                                <p>기간: 2021년 11월 ~ 2021년 2월</p>
+                                <p>고객사: 사단법인 트러스트무용단</p>
+                                <p>결과물: 인공지능 무용교육 시스템(웹)</p>
+                                <p class="sub">
+                                    SD-OCT(광간섭 단층촬영) 이미지를 활용하여 여러가지 망막질환을 분류하는 딥러닝 모델을 개발하였습니다. 해당 모델은 실제 망막전문의와의 비교에서 2%가량 높은 정확도를 보였습니다.
+                                </p>
+                                <a href="https://www.mk.co.kr/news/society/view/2020/12/1321269/">관련기사 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="./images/project4.png" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>열화상 이미지 기반 위험지역 예측 시스템 개발</h5>
+                            <p>기간: 2020년 7월 ~ 2020년 11월</p>
+                            <p>고객사: 한국건설기술연구원</p>
+                            <p>결과물: 의심지역 점검을 위한 통합 시스템</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>열화상 이미지 기반 위험지역 예측 시스템 개발</h5>
+                                <p>기간: 2020년 7월 ~ 2020년 11월</p>
+                                <p>고객사: 한국건설기술연구원</p>
+                                <p>결과물: 의심지역 점검을 위한 통합 시스템</p>
+                                <p class="sub">
+                                    이미지 세그멘테이션(Image Segmentation) 기술을 활용하여 지하에 매설된 파이프라인의 누출 등 이상 상태를 탐지하는 딥러닝 모델을 개발했습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex_box">
+                    <div>
+                        <div class="img">
+                            <img src="./images/project5.jpg" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>Cross-Lingual Word Embedding을 활용한 자살 위험도 예측 기술</h5>
+                            <p>기간: 2020년 ~ 2021년</p>
+                            <p>협력연구기관: 성균관대학교 DSAIL</p>
+                            <p>결과물: 자살위험도 예측 기술</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>Cross-Lingual Word Embedding을 활용한 자살 위험도 예측 기술</h5>
+                                <p>기간: 2020년 ~ 2021년</p>
+                                <p>협력연구기관: 성균관대학교 DSAIL</p>
+                                <p>결과물: 자살위험도 예측 기술</p>
+                                <p class="sub">
+                                    한국어로 되어있는 부족한 자살데이터의 한계를 극복하고, 다양한 언어를 활용하여 한국어 자살 위험도 예측 모델을 개발하였습니다.
+                                </p>
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3159652.3159705?casa_token=D7I6NrVuJYwAAAAA:fCy0HCVmF2zxTgRRkRw6MNVIjTBkXQWLGxEoEGbCLRZEdnZuEYmgSrmI2NgxJcLnNAZwxWUpHri22DQ">관련논문 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="./images/project6.png" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>
+                                정보확산과정 예측 딥러닝 모델 개발</h5>
+                            <p>기간: 2018년 1월 ~ 2021년 10월</p>
+                            <p>고객사: 한국연구재단</p>
+                            <p>결과물: 딥러닝 기반 정보확산과정 예측 모델</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>
+                                    정보확산과정 예측 딥러닝 모델 개발</h5>
+                                <p>기간: 2018년 1월 ~ 2021년 10월</p>
+                                <p>고객사: 한국연구재단</p>
+                                <p>결과물: 딥러닝 기반 정보확산과정 예측 모델</p>
+                                <p class="sub">
+                                    그래프기반의 정보확산과정을 모델링하고 딥러닝 기반의 정보확산예측 모델을 개발하였습니다.
+                                </p>
+                                <a href="https://dl.acm.org/doi/abs/10.1145/3159652.3159705?casa_token=D7I6NrVuJYwAAAAA:fCy0HCVmF2zxTgRRkRw6MNVIjTBkXQWLGxEoEGbCLRZEdnZuEYmgSrmI2NgxJcLnNAZwxWUpHri22DQ">관련논문 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <div class="img">
+                            <img src="./images/project7.png" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>감염병 예방 및 관리를 위한 사회-접촉 그래프 모델링 및 분석</h5>
+                            <p>참여기간: 2020년 10월 ~ 2023년 9월</p>
+                            <p>고객사: 한국연구재단</p>
+                            <p>결과물: 감염병 예방 및 관리를 위한 사회-접촉 그래프 모델</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>감염병 예방 및 관리를 위한 사회-접촉 그래프 모델링 및 분석</h5>
+                                <p>참여기간: 2020년 10월 ~ 2023년 9월</p>
+                                <p>고객사: 한국연구재단</p>
+                                <p>결과물: 감염병 예방 및 관리를 위한 사회-접촉 그래프 모델</p>
+                                <p class="sub">
+                                    감염병 예방 및 관리를 위하여 소셜미디어에서 이미지의 전파 패턴을 분석하였습니다. 이런 분석과 기계학습을 기반으로 이미지 전파 패턴 예측 모델을 개발하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="./images/project8.jpg" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5><균와아집도> 공감각 재현 프로젝트</h5>
+                            <p>참여기간: 2020년 7월 ~ 2021년 12월</p>
+                            <p>고객사: 문화체육관광부, 한국콘텐츠진흥원</p>
+                            <p>결과물: <균와아집도> 재현, 전문인력양성</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5><균와아집도> 공감각 재현 프로젝트</h5>
+                                <p>참여기간: 2020년 7월 ~ 2021년 12월</p>
+                                <p>고객사: 문화체육관광부, 한국콘텐츠진흥원</p>
+                                <p>결과물: <균와아집도> 재현, 전문인력양성</p>
+                                <p class="sub">딥러닝 기반 스타일 트랜스퍼 기술을 활용하여 <균와아집도> 재현했습니다. 또한, 융합예술 전문 인력 양성에 힘을 쏟았습니다.
+                                </p>
+                                <a href="http://www.globalepic.co.kr/view.php?ud=202006171708103773233fa3143_29">관련기사 확인하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <div class="img">
+                            <img src="./images/project9.jpg" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>코로나 관련 가짜뉴스 학습데이터 구축 및 응용</h5>
+                            <p>참여기간: 2020년 7월 ~ 2020년 11월</p>
+                            <p>고객사: 한국전자통신연구원</p>
+                            <p>결과물: 코로나19 관련 가짜뉴스 데이터 수집 시스템, 가짜뉴스 검출 기계학습 모델</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>코로나 관련 가짜뉴스 학습데이터 구축 및 응용</h5>
+                                <p>참여기간: 2020년 7월 ~ 2020년 11월</p>
+                                <p>고객사: 한국전자통신연구원</p>
+                                <p>결과물: 코로나19 관련 가짜뉴스 데이터 수집 시스템, 가짜뉴스 검출 기계학습 모델</p>
+                                <p class="sub">코로나19 관련 가짜뉴스 데이터 수집 시스템 구현 및 학습 데이터를 수집하는 시스템을 구축했습니다. 그리고 이를 기반으로 기계학습기반 가짜뉴스 검출 모델을 개발하였고, 검증까지 완료하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="./images/project10.jpg" alt="">
+                        </div>
+                        <div class="segment">
+                            <h5>인기있는 콘텐츠 공유 예측을 위한 빅데이터 기반 핵심기술 연구</h5>
+                            <p>참여기간: 2017년 3월 ~ 2018년 2월</p>
+                            <p>고객사: 한국연구재단</p>
+                            <p>결과물: 기계학습 기반 콘텐츠 예측 시스템</p>
+                        </div>
+                        <div class="hover_segment">
+                            <div class="inner">
+                                <h5>인기있는 콘텐츠 공유 예측을 위한 빅데이터 기반 핵심기술 연구</h5>
+                                <p>참여기간: 2017년 3월 ~ 2018년 2월</p>
+                                <p>고객사: 한국연구재단</p>
+                                <p>결과물: 기계학습 기반 콘텐츠 예측 시스템</p>
+                                <p class="sub">콘텐츠 공유를 종합적으로 표현할 수 있는 다중계층 기반 공유모델을 제안하였습니다. 또한, 콘텐츠 공유와 관련된 다양한 정보를 종합적으로 고려한 기계학습 기반 예측 시스템을 개발하였습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="footer_top_button"></a>
+    <footer>
+        <div class="inner">
+            <p>RAONDATA 라온데이터</p>
+            <ul>
+                <li>Email: seongchoi@raondata.ai</li>
+                <li>주소: 서울시 종로구 혜화동 창경궁로 35길 38</li>
+                <li>대표번호: 010-3622-8502</li>
+                <li>법인 사업자 등록번호: 661-86-02087</li>
+            </ul>
+            <p class="copy">Copyright 2020. RAON DATA All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(window).scroll(function() {
+            var _scrTop = $(window).scrollTop();
+            var _scrHeight = $(window).height();
+            if (_scrTop >= 1) {
+                $("body").addClass("scroll");
+            } else {
+                $("body").removeClass("scroll");
+            }
+            if (_scrTop >= $(document).height() - $(window).height() - 150) {
+                $("body").addClass("lastScroll");
+            } else {
+                $("body").removeClass("lastScroll");
+            }
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>라온데이터</title>
+</head>
+
+<body>
+    <div class="m_head">
+        <div class="flex_box">
+            <h1 class="logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고" width="115"></a></h1>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <ul class="m_head_top">
+                    <li><a href="./index.html"><img src="./images/home.png" alt="홈" width="20"></a></li>
+                </ul>
+                <ul class="m_head_list">
+                    <li>
+                        <a href="./sub1.html">
+                            <p>인공지능 컨설팅</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub2.html">
+                            <p>팀</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub3.html">
+                            <p>고객사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub4.html">
+                            <p>협력기관</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5.html">
+                            <p>프로젝트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub6.html">
+                            <p>연구성과</p>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="location.href='./sub7.html';">문의하기</button>
+            </div>
+            <a href="#0" class="opennav"></a>
+        </div>
+
+        <script>
+            $(function() {
+                $('.opennav').click(function() {
+                    $('.nav_bg').show();
+                    $('html,body').css({
+                        'overflow': "hidden"
+                    });
+                    $('.closebtn').css({
+                        'right': "295px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'right': "0"
+                    });
+                });
+            });
+            $(function() {
+                $('.closebtn').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+            $(function() {
+                $('.sidenav ul.m_head_list li a').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+        </script>
+        <div class="nav_bg"></div>
+    </div>
+    <header>
+        <div class="inner">
+            <h2 class="logo logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h2>
+            <div class="menu_box">
+                <ul class="l_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./sub1.html">인공지능 컨설팅</a></li>
+                    <li><a href="./sub2.html">팀</a></li>
+                    <li><a href="./sub3.html">고객사</a></li>
+                    <li><a href="./sub4.html">협력기관</a></li>
+                    <li><a href="./sub5.html">프로젝트</a></li>
+                    <li><a href="./sub6.html">연구성과</a></li>
+                    <li><a href="./sub7.html">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sub_ct1">
+        <div class="inner_1280">
+            <div class="title">
+                <h4>Artificial Intelligence Consulting</h4>
+                <p>무한한 가능성을 현실로 바꾸는 도전을 함께합니다</p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_ct2">
+        <div class="inner_1280">
+            <div class="consulting">
+                <div class="flex_box">
+                    <img src="./images/consulting1.png" alt="">
+                    <div class="segment">
+                        <h4>스케치업 미팅</h4>
+                        <div class="flex_box">
+                            <div>
+                                <h5>진행내용</h5>
+                                <p>· 온, 오프라인 미팅 (1 ~ 2회)</p>
+                                <p>· 고객사의 목표, 문제상황 확인</p>
+                                <p>· 인공지능 기술 도입을 위한 사전 검토</p>
+                            </div>
+                            <div>
+                                <h5>결과물</h5>
+                                <p>· 적용가능한 인공지능 기술에 대한
+                                    리포트</p>
+                                <p>· 기술 구현을 위한 로드맵</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <img src="./images/consulting2.png" alt="">
+                    <div class="segment">
+                        <h4>데이터 심층분석</h4>
+                        <div class="flex_box">
+                            <div>
+                                <h5>진행내용</h5>
+                                <p>· 데이터에 대한 심층적인 분석</p>
+                                <p>· 데이터 수집/정제/관리</p>
+                                <p>· 필요 시 데이터 파이프라인
+                                    (Pipeline) 설계</p>
+                            </div>
+                            <div>
+                                <h5>결과물</h5>
+                                <p>· 적용가능한 인공지능 기술에 대한
+                                    리포트</p>
+                                <p>· 기술 구현을 위한 로드맵</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <img src="./images/consulting3.png" alt="">
+                    <div class="segment">
+                        <h4>모델 개발 및 배포</h4>
+                        <div class="flex_box">
+                            <div>
+                                <h5>진행내용</h5>
+                                <p>· 인공지능 모델 학습 및 검증</p>
+                                <p>· 모델 시연을 위한 프로토타입 개발</p>
+                            </div>
+                            <div>
+                                <h5>결과물</h5>
+                                <p>· 인공지능 모델 리포트</p>
+                                <p>· 웹 프로토타입 (모델과 함께 제공)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="footer_top_button"></a>
+    <footer>
+        <div class="inner">
+            <p>RAONDATA 라온데이터</p>
+            <ul>
+                <li>Email: seongchoi@raondata.ai</li>
+                <li>주소: 서울시 종로구 혜화동 창경궁로 35길 38</li>
+                <li>대표번호: 010-3622-8502</li>
+                <li>법인 사업자 등록번호: 661-86-02087</li>
+            </ul>
+            <p class="copy">Copyright 2020. RAON DATA All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(window).scroll(function() {
+            var _scrTop = $(window).scrollTop();
+            var _scrHeight = $(window).height();
+            if (_scrTop >= 1) {
+                $("body").addClass("scroll");
+            } else {
+                $("body").removeClass("scroll");
+            }
+            if (_scrTop >= $(document).height() - $(window).height() - 150) {
+                $("body").addClass("lastScroll");
+            } else {
+                $("body").removeClass("lastScroll");
+            }
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

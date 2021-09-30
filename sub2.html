@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>라온데이터</title>
+</head>
+
+<body>
+    <div class="m_head">
+        <div class="flex_box">
+            <h1 class="logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고" width="115"></a></h1>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <ul class="m_head_top">
+                    <li><a href="./index.html"><img src="./images/home.png" alt="홈" width="20"></a></li>
+                </ul>
+                <ul class="m_head_list">
+                    <li>
+                        <a href="./sub1.html">
+                            <p>인공지능 컨설팅</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub2.html">
+                            <p>팀</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub3.html">
+                            <p>고객사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub4.html">
+                            <p>협력기관</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5.html">
+                            <p>프로젝트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub6.html">
+                            <p>연구성과</p>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="location.href='./sub7.html';">문의하기</button>
+            </div>
+            <a href="#0" class="opennav"></a>
+        </div>
+
+        <script>
+            $(function() {
+                $('.opennav').click(function() {
+                    $('.nav_bg').show();
+                    $('html,body').css({
+                        'overflow': "hidden"
+                    });
+                    $('.closebtn').css({
+                        'right': "295px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'right': "0"
+                    });
+                });
+            });
+            $(function() {
+                $('.closebtn').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+            $(function() {
+                $('.sidenav ul.m_head_list li a').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+        </script>
+        <div class="nav_bg"></div>
+    </div>
+    <header>
+        <div class="inner">
+            <h2 class="logo logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h2>
+            <div class="menu_box">
+                <ul class="l_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./sub1.html">인공지능 컨설팅</a></li>
+                    <li><a href="./sub2.html">팀</a></li>
+                    <li><a href="./sub3.html">고객사</a></li>
+                    <li><a href="./sub4.html">협력기관</a></li>
+                    <li><a href="./sub5.html">프로젝트</a></li>
+                    <li><a href="./sub6.html">연구성과</a></li>
+                    <li><a href="./sub7.html">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sub_ct1">
+        <div class="inner_1280">
+            <div class="title">
+                <h4>Meet Our Team</h4>
+                <p>RAONDATA의 구성원들을 소개합니다</p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_ct2">
+        <div class="team">
+            <div class="inner_1280">
+                <h5 class="title">Member</h5>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/team1.png" alt="">
+                        <div class="segment">
+                            <p>Seong Choi<br /><span>CEO</span></p>
+                            <p>성균관대 석사과정</p>
+                            <div class="arrow">
+                                <img src="./images/arrow.png" alt="">
+                            </div>
+                            <a href="https://sites.google.com/view/seong-choi">
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/team2.png" alt="">
+                        <div class="segment">
+                            <p>Jinyoung Han<br /><span>CTO</span></p>
+                            <p>인공지능 기술 총괄<br />성균관대 교수</p>
+                            <div class="arrow">
+                                <img src="./images/arrow.png" alt="">
+                            </div>
+                            <a href="https://sites.google.com/site/jyhantop/"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/team3.png" alt="">
+                        <div class="segment">
+                            <p>Jeewoo Yoon<br /><span>AI Scientist</span></p>
+                            <p>성균관대 박사과정</p>
+                            <div class="arrow">
+                                <img src="./images/arrow.png" alt="">
+                            </div>
+                            <a href="https://sites.google.com/view/jeewoo-yoon"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/team4.png" alt="">
+                        <div class="segment">
+                            <p>Honggeun Ji<br /><span>AI Engineer</span></p>
+                            <p>컴퓨터 비전(CV)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/team5.png" alt="">
+                        <div class="segment">
+                            <p>Jina Kim<br /><span>AI Scientist</span></p>
+                            <p>자연어 처리(NLP)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/team6.png" alt="">
+                        <div class="segment">
+                            <p>Jisu Kim<br /><span>AI Engineer</span></p>
+                            <p>자연어 처리(NLP)<br />
+                                데이터 심층분석 및<br />
+                                딥러닝 모델 개발</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/team7.png" alt="">
+                        <div class="segment">
+                            <p>Jisu Kim<br /><span>AI Engineer</span></p>
+                            <p>자연어 처리(NLP)<br />
+                                데이터 심층분석 및<br />
+                                딥러닝 모델 개발</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advisors">
+            <div class="inner_1280">
+                <h5 class="title">Advisors</h5>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/Advisors1.png" alt="">
+                        <div class="segment">
+                            <p>Eunil Park<br /><span>Human-AI<br />Interaction </span></p>
+                            <p>성균관대 교수</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/Advisors2.png" alt="">
+                        <div class="segment">
+                            <p>Angel Pobil<br /><span>Human-Robot<br />Interaction</span></p>
+                            <p>Prof. at Jaume I<br />University</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/Advisors3.png" alt="">
+                        <div class="segment">
+                            <p>Jungseock Joo<br /><span>Computer Vision</span></p>
+                            <p>Prof. at UCLA</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/Advisors4.png" alt="">
+                        <div class="segment">
+                            <p>Daniel Duckjin Hwang<br /><span>Medical AI</span></p>
+                            <p>한길 안과병원 데이터<br />센터장</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/Advisors5.png" alt="">
+                        <div class="segment">
+                            <p>Jin Choi<br /><span>Medical AI</span></p>
+                            <p>한빛 메디컬 원장</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/Advisors6.png" alt="">
+                        <div class="segment">
+                            <p>Soyoung Park<br /><span>Legal AI</span></p>
+                            <p>변호사</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex_box">
+                    <div>
+                        <img src="./images/Advisors7.png" alt="">
+                        <div class="segment">
+                            <p>Chris Song<br /><span>Human Resource<br />+ AI</span></p>
+                            <p>코스트코 (Costco)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/Advisors8.png" alt="">
+                        <div class="segment">
+                            <p>Junho Suh<br /><span>AI System</span></p>
+                            <p>Intel, USA (인텔)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="footer_top_button"></a>
+    <footer>
+        <div class="inner">
+            <p>RAONDATA 라온데이터</p>
+            <ul>
+                <li>Email: seongchoi@raondata.ai</li>
+                <li>주소: 서울시 종로구 혜화동 창경궁로 35길 38</li>
+                <li>대표번호: 010-3622-8502</li>
+                <li>법인 사업자 등록번호: 661-86-02087</li>
+            </ul>
+            <p class="copy">Copyright 2020. RAON DATA All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(window).scroll(function() {
+            var _scrTop = $(window).scrollTop();
+            var _scrHeight = $(window).height();
+            if (_scrTop >= 1) {
+                $("body").addClass("scroll");
+            } else {
+                $("body").removeClass("scroll");
+            }
+            if (_scrTop >= $(document).height() - $(window).height() - 150) {
+                $("body").addClass("lastScroll");
+            } else {
+                $("body").removeClass("lastScroll");
+            }
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

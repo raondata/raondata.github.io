@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>라온데이터</title>
+</head>
+
+<body>
+    <div class="m_head">
+        <div class="flex_box">
+            <h1 class="logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고" width="115"></a></h1>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <ul class="m_head_top">
+                    <li><a href="./index.html"><img src="./images/home.png" alt="홈" width="20"></a></li>
+                </ul>
+                <ul class="m_head_list">
+                    <li>
+                        <a href="./sub1.html">
+                            <p>인공지능 컨설팅</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub2.html">
+                            <p>팀</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub3.html">
+                            <p>고객사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub4.html">
+                            <p>협력기관</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5.html">
+                            <p>프로젝트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub6.html">
+                            <p>연구성과</p>
+                        </a>
+                    </li>
+                </ul>
+                <button onclick="location.href='./sub7.html';">문의하기</button>
+            </div>
+            <a href="#0" class="opennav"></a>
+        </div>
+
+        <script>
+            $(function() {
+                $('.opennav').click(function() {
+                    $('.nav_bg').show();
+                    $('html,body').css({
+                        'overflow': "hidden"
+                    });
+                    $('.closebtn').css({
+                        'right': "295px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'right': "0"
+                    });
+                });
+            });
+            $(function() {
+                $('.closebtn').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+            $(function() {
+                $('.sidenav ul.m_head_list li a').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+        </script>
+        <div class="nav_bg"></div>
+    </div>
+    <header>
+        <div class="inner">
+            <h2 class="logo logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h2>
+            <div class="menu_box">
+                <ul class="l_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./sub1.html">인공지능 컨설팅</a></li>
+                    <li><a href="./sub2.html">팀</a></li>
+                    <li><a href="./sub3.html">고객사</a></li>
+                    <li><a href="./sub4.html">협력기관</a></li>
+                    <li><a href="./sub5.html">프로젝트</a></li>
+                    <li><a href="./sub6.html">연구성과</a></li>
+                    <li><a href="./sub7.html">문의하기</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="sub_ct1">
+        <div class="inner_1280">
+            <div class="title">
+                <h4>Contact Us</h4>
+                <p>궁금하신 점이나 문의사항이 있다면 남겨주세요.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sub_ct2">
+        <div class="contact">
+            <div class="inner_1280">
+                <h5 class="title">상담 문의하기
+                    <span>라온데이터에 상담을 신청하고 싶으시면 아래로 문의해주세요.</span>
+                </h5>
+
+                <form class="gform" name="email" target="sendiframe" method="post" action="./form_mail.php" onsubmit="thankyou();">
+                    <input type="hidden">
+
+
+                    <div class="flex_box">
+                        <div class="form-group">
+                            <p>신청업체</p>
+                            <div class="input_box"><input type="text" class="form-control" id="company_name" name="company_name" required></div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <p>신청자 명 /<br />
+                                신청자 직책</p>
+                            <div class="input_box"><input type="text" class="form-control" id="fromName" name="fromName" required></div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <p>상담내용</p>
+                        <div class="input_box"><textarea type="text" class="form-control add" id="content" name="content"></textarea></div>
+                    </div>
+
+
+                    <input id="popOkBtn" type="submit" value="보내기">
+                    <iframe name="sendiframe" style="display:none;" frameborder="0"></iframe>
+                </form>
+
+                <div class="thankyou">
+                    <div>
+                        <p class="kor">전송되었습니다. 소중한 의견 감사합니다.</p>
+                        <p class="eng">Success. Thanks for contacting.</p>
+                        <p class="confirm"><a href="javascript:close()">확인 <span class="timer"></span></a></p>
+                    </div>
+
+                    <script>
+                        function Submit() {
+                            var send = "<request></request>";
+                            document.gform.target = "sendiframe";
+                            document.gform.txtHTML.value = send;
+                            document.gform.submit();
+                        } //send to iframe
+                        function close() {
+                            var tnx = document.querySelector(".thankyou");
+                            tnx.style.zIndex = '-1';
+                            tnx.style.opacity = '0';
+                            location.reload();
+                        } //thankyou mordal close
+                    </script>
+                    <script>
+                        function thankyou() {
+                            var tnx = document.querySelector(".thankyou");
+                            tnx.style.zIndex = '1';
+                            tnx.style.opacity = '1';
+                            //mordal open
+                            setTimeout(function() {
+                                tnx.style.zIndex = '-1';
+                                tnx.style.opacity = '0';
+                                location.reload();
+                            }, 5000);
+                            //mordal set time 5sec
+                            var count = 5;
+                            var counter = setInterval(timer, 1100);
+
+                            function timer() {
+                                count--;
+                                if (count <= 0) {
+                                    clearInterval(counter);
+                                    document.querySelector('.timer').innerHTML = "";
+                                    return;
+                                }
+                                document.querySelector('.timer').innerHTML = count;
+                            } //count 5sec
+                        } //thankyou message box
+                    </script>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="footer_top_button"></a>
+    <footer>
+        <div class="inner">
+            <p>RAONDATA 라온데이터</p>
+            <ul>
+                <li>Email: seongchoi@raondata.ai</li>
+                <li>주소: 서울시 종로구 혜화동 창경궁로 35길 38</li>
+                <li>대표번호: 010-3622-8502</li>
+                <li>법인 사업자 등록번호: 661-86-02087</li>
+            </ul>
+            <p class="copy">Copyright 2020. RAON DATA All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>
+        $(window).scroll(function() {
+            var _scrTop = $(window).scrollTop();
+            var _scrHeight = $(window).height();
+            if (_scrTop >= 1) {
+                $("body").addClass("scroll");
+            } else {
+                $("body").removeClass("scroll");
+            }
+            if (_scrTop >= $(document).height() - $(window).height() - 150) {
+                $("body").addClass("lastScroll");
+            } else {
+                $("body").removeClass("lastScroll");
+            }
+        });
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
