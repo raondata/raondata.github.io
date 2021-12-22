@@ -1,142 +1,348 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
-    <script>
-      $(function(){
-        $("#header").load("./header.html"); 
-        $("#footer").load("./footer.html");
-        $("#main").load("./main.html");
-      });
-    </script>
-    <title>라온데이터</title>
-  </head>
 
-  <body>
-    <div id="header"></div>
-    <div id="main"></div>
-    <a href="#" class="footer_top_button"></a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width, target-densityDpi=medium-dpi">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <title>라온데이터</title>
+
+    <script>
+        $(function(){
+            $("#header").load("header.html"); 
+            $("#footer").load("footer.html"); 
+        });
+    </script>
+</head>
+
+<body>
+    <div class="m_head">
+        <div class="flex_box">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./images/logo_w.png" alt="로고" width="115"></a>
+            </h1>
+            <h1 class="logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고" width="115"></a></h1>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <ul class="m_head_top">
+                    <li><a href="./index.html"><img src="./images/home.png" alt="홈" width="20"></a></li>
+                </ul>
+                <ul class="m_head_list">
+                    <li>
+                        <a href="./sub1.html">
+                            <p>인공지능 컨설팅</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub2.html">
+                            <p>팀</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub3.html">
+                            <p>고객사</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub4.html">
+                            <p>협력기관</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub5.html">
+                            <p>프로젝트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./sub6.html">
+                            <p>연구성과</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- <button onclick="location.href='./sub7.html';">문의하기</button> -->
+            </div>
+            <a href="#0" class="opennav"></a>
+        </div>
+
+        <script>
+            $(function() {
+                $('.opennav').click(function() {
+                    $('.nav_bg').show();
+                    $('html,body').css({
+                        'overflow': "hidden"
+                    });
+                    $('.closebtn').css({
+                        'right': "295px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "initial"
+                    });
+                    $('.sidenav').css({
+                        'right': "0"
+                    });
+                });
+            });
+            $(function() {
+                $('.closebtn').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+            $(function() {
+                $('.sidenav ul.m_head_list li a').click(function() {
+                    $('.nav_bg').hide();
+
+                    $('html,body').css({
+                        'overflow': ""
+                    });
+                    $('.closebtn').css({
+                        'right': "-50px"
+                    });
+                    $('.sidenav').css({
+                        'overflow-x': "hidden"
+                    });
+                    $('.sidenav').css({
+                        'right': "-290px"
+                    });
+                });
+            });
+        </script>
+        <div class="nav_bg"></div>
+    </div>
+    <header>
+        <div class="inner">
+            <h2 class="logo"><a href="./index.html"><img src="./images/logo_w.png" alt="로고"></a></h2>
+            <h2 class="logo logo_v2"><a href="./index.html"><img src="./images/logo.png" alt="로고"></a></h2>
+            <div class="menu_box">
+                <ul class="l_menu">
+                    <li><a href="./index.html">홈</a></li>
+                    <li><a href="./sub1.html">인공지능 컨설팅</a></li>
+                    <li><a href="./sub2.html">팀</a></li>
+                    <li><a href="./sub3.html">고객사</a></li>
+                    <li><a href="./sub4.html">협력기관</a></li>
+                    <li><a href="./sub5.html">프로젝트</a></li>
+                    <li><a href="./sub6.html">연구성과</a></li>
+                    <!-- <li><a href="./sub7.html">문의하기</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="main_ct1">
+        <p>APPLICABLE AI<br />
+            <span>For Your Business</span>
+        </p>
+    </div>
+    <div class="main_ct2">
+        <div class="flex_box">
+            <div class="left_content">
+                <div class="txt_center">
+                    <h4 class="blue_g">
+                        Our Service
+                    </h4>
+                </div>
+                <h5>
+                    기업의 성공적인 AI Biz 도입 컨설팅
+                </h5>
+                <p>
+                    기업이 해결하고자 하는 문제를 <span class="blue">인공지능 문제로 정의 및 기획</span><br />
+                    기업이 보유한 혹은 필요한 <span class="blue">데이터 파악, 수집, 가공, 분석</span><br />
+                    정의된 문제를 바탕으로 <span class="blue">인공지능 기반 문제해결 솔루션 제시</span><br />
+                    기업의 AI 비즈니스 연착륙을 위한 <span class="blue">기업 운영 솔루션 제시</span>
+                </p>
+            </div>
+            <div class="right_content">
+                <img src="./images/ai_business.png" alt="AI Business">
+            </div>
+        </div>
+    </div>
+    <div class="main_ct3">
+        <div class="inner">
+            <div class="txt_center">
+                <h4 class="blue_g">
+                    Our Achievements
+                </h4>
+            </div>
+            <h5>최신 인공지능 기술을 연구하는 전문가 집단</h5>
+            <p>인공지능/빅데이터 분야에서 최우수국제학술대회를 포함한 100편 이상의 논문 출판</p>
+            <ul class="list">
+                <li>
+                    <h6>Cross-Lingual Suicidal-Oriented Word Embedding
+                        toward Suicide Prevention</h6>
+                    <p>Daeun Lee, Soyoung Park, Jiwon Kang, Daejin Choi, and
+                        Jinyoung Han*</p>
+                    <p>EMNLP Findings (2020)</p>
+                </li>
+                <li>
+                    <h6>VCTUBE: A Library for Automatic Speech Data
+                        Annotation</h6>
+                    <p>Seong Choi, Seunghoon Jeong, Jeewoo Yoon,
+                        Migyeong Yang, Minsam Ko, Eunil Park, Jinyoung Han*,Seong Choi, Seunghoon Jeong, Jeewoo Yoon,
+                        Migyeong Yang, Minsam Ko, Eunil Park, Jinyoung Han*,</p>
+                    <p>INTERSPEECH, Show &Tell (2020)</p>
+                </li>
+            </ul>
+            <ul class="list">
+                <li>
+                    <h6>Distinguishing retinal angiomatous proliferation from
+                        polypoidal choroidal vasculopathy with a deepDistinguishing retinal angiomatous proliferation from
+                        polypoidal choroidal vasculopathy with a deep</h6>
+                    <p>Daniel Duck-Jin Hwang, Seong Choi, Junseo Ko, Jeewoo Yoon,
+                        Ji In Park, Joon Seo Hwang, Jeong Mo Han, Hak Jun Lee,Daniel Duck-Jin Hwang, Seong Choi, Junseo Ko, Jeewoo Yoon,
+                        Ji In Park, Joon Seo Hwang, Jeong Mo Han, Hak Jun Lee,</p>
+                    <p>Scientific Reports 11, Article number: 9275 (2021)</p>
+                </li>
+                <li>
+                    <h6>A deep hybrid learning model for customer
+                        repurchase behavior</h6>
+                    <p>Seong Choi, Seunghoon Jeong, Jeewoo Yoon,
+                        Migyeong Yang, Minsam Ko, Eunil Park, Jinyoung Han*,Seong Choi, Seunghoon Jeong, Jeewoo Yoon,
+                        Migyeong Yang, Minsam Ko, Eunil Park, Jinyoung Han*,</p>
+                    <p>Journal of Retailing and Consumer Services, Vol 59,102381Journal of Retailing and Consumer Services, Vol 59,102381</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main_ct4">
+        <div class="flex_box">
+            <div class="left_content">
+                <div class="txt_center">
+                    <h4 class="blue_g">
+                        Our Contact
+                    </h4>
+                </div>
+                <h5>라온데이터 인공지능 컨설팅 문의하기</h5>
+                <a href="./sub7.html">문의 바로가기</a>
+            </div>
+            <div class="right_content">
+                <img src="./images/send.png" alt="문의하기">
+                <p>seongchoi@raondata.ai</p>
+            </div>
+        </div>
+    </div>
     <div id="footer"></div>
     <script>
-      $(window).scroll(function () {
-        var _scrTop = $(window).scrollTop();
-        var _scrHeight = $(window).height();
-        if (_scrTop >= 1) {
-          $("body").addClass("scroll");
-        } else {
-          $("body").removeClass("scroll");
-        }
-        if (_scrTop >= $(document).height() - $(window).height() - 150) {
-          $("body").addClass("lastScroll");
-        } else {
-          $("body").removeClass("lastScroll");
-        }
-      });
+        $(window).scroll(function() {
+            var _scrTop = $(window).scrollTop();
+            var _scrHeight = $(window).height();
+            if (_scrTop >= 1) {
+                $("body").addClass("scroll");
+            } else {
+                $("body").removeClass("scroll");
+            }
+            if (_scrTop >= $(document).height() - $(window).height() - 150) {
+                $("body").addClass("lastScroll");
+            } else {
+                $("body").removeClass("lastScroll");
+            }
+        });
     </script>
 
     <script>
-      AOS.init();
+        AOS.init();
     </script>
     <style>
-      header {
-        background: transparent;
-        border-bottom: none;
-      }
-
-      .scroll header .logo {
-        display: none;
-      }
-
-      header .logo_v2 {
-        display: none;
-      }
-
-      .scroll header .logo_v2 {
-        display: block;
-      }
-
-      .scroll header {
-        background: #fff;
-        border-bottom: 1px solid #ddd;
-      }
-
-      header .menu_box ul li a {
-        color: #fff;
-      }
-      header .menu_box ul li a:hover {
-        color: #fff;
-      }
-      header .menu_box ul li a::before {
-        background: #fff;
-      }
-      .scroll header .menu_box ul li a {
-        color: #333;
-      }
-
-      .scroll header .menu_box ul li a:hover {
-        color: #203466;
-      }
-
-      .scroll header .menu_box ul li a::before {
-        background: #203466;
-      }
-
-      @media (max-width: 1280px) {
-        .m_none {
-          display: none;
+        header {
+            background: transparent;
+            border-bottom: none;
         }
 
-        .m_head {
-          border-bottom: none;
+        .scroll header .logo {
+            display: none;
         }
 
-        .m_head .logo_v2 {
-          display: none;
+        header .logo_v2 {
+            display: none;
         }
 
-        .scroll .m_head .logo_v2 {
-          display: block;
+        .scroll header .logo_v2 {
+            display: block;
         }
 
-        .scroll .m_head .logo {
-          display: none;
+        .scroll header {
+            background: #fff;
+            border-bottom: 1px solid #ddd;
         }
 
-        .scroll .m_head .opennav {
-          background-image: url("./images/menu.png");
+        header .menu_box ul li a {
+            color: #fff;
+        }
+        header .menu_box ul li a:hover {
+            color: #fff;
+        }
+        header .menu_box ul li a::before {
+            background: #fff;
+        }
+        .scroll header .menu_box ul li a {
+            color: #333;
         }
 
-        .scroll .m_head {
-          background: #fff;
-          border-bottom: 1px solid #ddd;
+        .scroll header .menu_box ul li a:hover {
+            color: #203466;
         }
 
-        .m_head .opennav {
-          background-image: url("./images/menu_w.png");
+        .scroll header .menu_box ul li a::before {
+            background: #203466;
         }
-      }
+
+
+        @media (max-width: 1280px) {
+            .m_none {
+                display: none;
+            }
+
+            .m_head {
+                border-bottom: none;
+            }
+
+            .m_head .logo_v2 {
+                display: none;
+            }
+
+            .scroll .m_head .logo_v2 {
+                display: block;
+            }
+
+            .scroll .m_head .logo {
+                display: none;
+            }
+
+            .scroll .m_head .opennav {
+                background-image: url("./images/menu.png");
+            }
+
+            .scroll .m_head {
+                background: #fff;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .m_head .opennav {
+                background-image: url("./images/menu_w.png");
+            }
+        }
     </style>
-  </body>
+</body>
+
 </html>

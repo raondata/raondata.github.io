@@ -587,6 +587,11 @@ footer .inner .copy {
     position: relative;
 }
 
+.sub_ct2 .team .flex_box>div>img {
+    width: 50%;
+    /* position: relative; */
+}
+
 .sub_ct2 .team .flex_box>div>.segment {
     position: absolute;
     width: 260px;
@@ -695,6 +700,11 @@ footer .inner .copy {
 .sub_ct2 .advisors .flex_box>div {
     width: 50%;
     position: relative;
+}
+
+.sub_ct2 .advisors .flex_box>div>img {
+    width: 50%;
+    /* position: relative; */
 }
 
 .sub_ct2 .advisors .flex_box>div>.segment {
@@ -1644,6 +1654,7 @@ input[type=submit] {
 
     .sub_ct2 .team .title {
         display: none;
+        color: red;
     }
 
     .sub_ct2 .team .flex_box {
@@ -1664,8 +1675,8 @@ input[type=submit] {
         width: 60%;
     }
 
-    .sub_ct2 .team .flex_box>div>img {
-        width: 100%;
+    .sub_ct2 .team .inner_1280 .flex_box > div > img {
+        width: 20%;
     }
 
     .sub_ct2 .team .flex_box>div>.segment {
