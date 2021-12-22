@@ -1675,8 +1675,8 @@ input[type=submit] {
         width: 60%;
     }
 
-    .sub_ct2 .team .inner_1280 .flex_box > div > img {
-        width: 20%;
+    .sub_ct2 .team .flex_box > div > img {
+        width: 100%;
     }
 
     .sub_ct2 .team .flex_box>div>.segment {
