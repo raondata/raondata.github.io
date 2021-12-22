@@ -330,7 +330,7 @@ footer .inner .copy {
 }
 
 .main_ct2 .flex_box .left_content h4 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -360,7 +360,7 @@ footer .inner .copy {
 }
 
 .main_ct3 .inner>div>h4 {
-    font-size: 24px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -375,6 +375,15 @@ footer .inner .copy {
     font-size: 22px;
     margin-bottom: 100px;
     text-align: center;
+}
+
+.main_ct3 .inner>p>a {
+    font-size: 22px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #203466;
+    border-bottom: 1px solid #333;
+    font-weight: 700;
 }
 
 .main_ct3 .inner>ul {
@@ -468,7 +477,7 @@ footer .inner .copy {
 }
 
 .main_ct4 .flex_box .left_content h4 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .main_ct4 .flex_box .left_content>.txt_center {
@@ -1455,7 +1464,7 @@ input[type=submit] {
     }
 
     .main_ct2 .flex_box .left_content h4 {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     .main_ct2 .flex_box .left_content h5 {
@@ -1494,7 +1503,7 @@ input[type=submit] {
     }
 
     .main_ct3 .inner>div>h4 {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     .main_ct3 .inner>h5 {
@@ -1564,7 +1573,7 @@ input[type=submit] {
     }
 
     .main_ct4 .flex_box .left_content h4 {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     .main_ct4 .flex_box .left_content h5 {
