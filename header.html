@@ -1,133 +1,134 @@
 <div class="m_head">
-    <div class="flex_box">
-      <h1 class="logo">
-        <a href="index"
-          ><img src="./images/logo_w.png" alt="로고" width="115"
-        /></a>
-      </h1>
-      <h1 class="logo_v2">
-        <a href="./index"
-          ><img src="./images/logo.png" alt="로고" width="115"
-        /></a>
-      </h1>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn">&times;</a>
-        <ul class="m_head_top">
-          <li>
-            <a href="./index"
-              ><img src="./images/home.png" alt="홈" width="20"
-            /></a>
-          </li>
-        </ul>
-        <ul class="m_head_list">
-          <li>
-            <a href="members">
-              <p>팀</p>
-            </a>
-          </li>
-          <li>
-            <a href="./sub3">
-              <p>고객사</p>
-            </a>
-          </li>
-          <li>
-            <a href="./sub4">
-              <p>협력기관</p>
-            </a>
-          </li>
-          <li>
-            <a href="./sub5">
-              <p>프로젝트</p>
-            </a>
-          </li>
-          <li>
-            <a href="./sub6">
-              <p>연구성과</p>
-            </a>
-          </li>
-        </ul>
-        <!-- <button onclick="location.href='./sub7';">문의하기</button> -->
-      </div>
-      <a href="#0" class="opennav"></a>
+  <div class="flex_box">
+    <h1 class="logo">
+      <a href="./index"
+        ><img src="./images/logo_w.png" alt="로고" width="115"
+      /></a>
+    </h1>
+    <h1 class="logo_v2">
+      <a href="./index"
+        ><img src="./images/logo.png" alt="로고" width="115"
+      /></a>
+    </h1>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn">&times;</a>
+      <ul class="m_head_top">
+        <li>
+          <a href="./index"
+            ><img src="./images/home.png" alt="홈" width="20"
+          /></a>
+        </li>
+      </ul>
+      <ul class="m_head_list">
+        <li>
+          <a href="./members">
+            <p>팀</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub3">
+            <p>고객사</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub4">
+            <p>협력기관</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub5">
+            <p>프로젝트</p>
+          </a>
+        </li>
+        <li>
+          <a href="./sub6">
+            <p>연구성과</p>
+          </a>
+        </li>
+      </ul>
+      <!-- <button onclick="location.href='./sub7';">문의하기</button> -->
     </div>
-
-    <script>
-      $(function () {
-        $(".opennav").click(function () {
-          $(".nav_bg").show();
-          $("html,body").css({
-            overflow: "hidden",
-          });
-          $(".closebtn").css({
-            right: "295px",
-          });
-          $(".sidenav").css({
-            "overflow-x": "initial",
-          });
-          $(".sidenav").css({
-            "overflow-x": "initial",
-          });
-          $(".sidenav").css({
-            right: "0",
-          });
-        });
-      });
-      $(function () {
-        $(".closebtn").click(function () {
-          $(".nav_bg").hide();
-
-          $("html,body").css({
-            overflow: "",
-          });
-          $(".closebtn").css({
-            right: "-50px",
-          });
-          $(".sidenav").css({
-            "overflow-x": "hidden",
-          });
-          $(".sidenav").css({
-            right: "-290px",
-          });
-        });
-      });
-      $(function () {
-        $(".sidenav ul.m_head_list li a").click(function () {
-          $(".nav_bg").hide();
-
-          $("html,body").css({
-            overflow: "",
-          });
-          $(".closebtn").css({
-            right: "-50px",
-          });
-          $(".sidenav").css({
-            "overflow-x": "hidden",
-          });
-          $(".sidenav").css({
-            right: "-290px",
-          });
-        });
-      });
-    </script>
-    <div class="nav_bg"></div>
+    <a href="#0" class="opennav"></a>
   </div>
-  <header>
-    <div class="inner">
-      <h2 class="logo">
-        <a href="./index"><img src="./images/logo_w.png" alt="로고" /></a>
-      </h2>
-      <h2 class="logo logo_v2">
-        <a href="./index"><img src="./images/logo.png" alt="로고" /></a>
-      </h2>
-      <div class="menu_box">
-        <ul class="l_menu">
-          <li><a href="./index">홈</a></li>
-          <li><a href="members">팀</a></li>
-          <li><a href="./sub3">고객사</a></li>
-          <li><a href="./sub4">협력기관</a></li>
-          <li><a href="./sub5">프로젝트</a></li>
-          <li><a href="./sub6">연구성과</a></li>
-        </ul>
-      </div>
+
+  <script>
+    $(function () {
+      $(".opennav").click(function () {
+        $(".nav_bg").show();
+        $("html,body").css({
+          overflow: "hidden",
+        });
+        $(".closebtn").css({
+          right: "295px",
+        });
+        $(".sidenav").css({
+          "overflow-x": "initial",
+        });
+        $(".sidenav").css({
+          "overflow-x": "initial",
+        });
+        $(".sidenav").css({
+          right: "0",
+        });
+      });
+    });
+    $(function () {
+      $(".closebtn").click(function () {
+        $(".nav_bg").hide();
+
+        $("html,body").css({
+          overflow: "",
+        });
+        $(".closebtn").css({
+          right: "-50px",
+        });
+        $(".sidenav").css({
+          "overflow-x": "hidden",
+        });
+        $(".sidenav").css({
+          right: "-290px",
+        });
+      });
+    });
+    $(function () {
+      $(".sidenav ul.m_head_list li a").click(function () {
+        $(".nav_bg").hide();
+
+        $("html,body").css({
+          overflow: "",
+        });
+        $(".closebtn").css({
+          right: "-50px",
+        });
+        $(".sidenav").css({
+          "overflow-x": "hidden",
+        });
+        $(".sidenav").css({
+          right: "-290px",
+        });
+      });
+    });
+  </script>
+  <div class="nav_bg"></div>
+</div>
+
+<header>
+  <div class="inner">
+    <h2 class="logo">
+      <a href="./index"><img src="./images/logo_w.png" alt="로고" /></a>
+    </h2>
+    <h2 class="logo logo_v2">
+      <a href="./index"><img src="./images/logo.png" alt="로고" /></a>
+    </h2>
+    <div class="menu_box">
+      <ul class="l_menu">
+        <li><a href="./index">홈</a></li>
+        <li><a href="./members">팀</a></li>
+        <li><a href="./sub3">고객사</a></li>
+        <li><a href="./sub4">협력기관</a></li>
+        <li><a href="./sub5">프로젝트</a></li>
+        <li><a href="./sub6">연구성과</a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</header>
