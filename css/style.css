@@ -1520,6 +1520,16 @@ input[type=submit] {
         line-height: 24px;
     }
 
+    .main_ct3 .inner>p>a {
+        font-size: 14px;
+        margin-bottom: 50px;
+        line-height: 24px;
+        text-align: center;
+        color: #203466;
+        border-bottom: 1px solid #333;
+        font-weight: 700;
+    }
+
     .main_ct3 .inner>ul {
         display: block;
     }
