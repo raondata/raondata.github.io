@@ -638,7 +638,7 @@ footer .inner .copy {
 
 .sub_ct2 .team .flex_box>div>.segment>p span {
     line-height: 34px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     width: 100%;
 }
@@ -1724,7 +1724,7 @@ input[type=submit] {
     }
 
     .sub_ct2 .team .flex_box>div>.segment>p span {
-        font-size: 14px;
+        font-size: 12px;
         line-height: 24px
     }
 
