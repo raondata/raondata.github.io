@@ -909,6 +909,7 @@ footer .inner .copy {
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.segment>h5 {
     font-size: 28px;
+    font-weight: 300;
     margin-bottom: 20px;
 }
 
@@ -950,13 +951,15 @@ footer .inner .copy {
     font-size: 28px;
     color: #fff;
     margin-bottom: 30px;
+    font-weight: 300;
+
 }
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.hover_segment p {
     font-size: 18px;
     color: #fff;
     line-height: 34px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.hover_segment p.sub {
@@ -974,7 +977,8 @@ footer .inner .copy {
     border: 1px solid #fff;
     color: #fff;
     text-align: center;
-    /* margin-top: 80px; */
+    margin-top: 80px;
+    font-weight: 300;
 }
 
 .sub_ct2 .publication {
@@ -1958,7 +1962,7 @@ input[type=submit] {
     }
 
     .sub_ct2 .projects>.inner_1280>.flex_box>div>.hover_segment a {
-        /* margin-top: 40px; */
+        margin-top: 40px;
         line-height: 35px;
         font-size: 13px;
     }
