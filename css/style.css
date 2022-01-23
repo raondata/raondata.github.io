@@ -909,7 +909,6 @@ footer .inner .copy {
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.segment>h5 {
     font-size: 28px;
-    font-weight: 300;
     margin-bottom: 20px;
 }
 
@@ -951,15 +950,13 @@ footer .inner .copy {
     font-size: 28px;
     color: #fff;
     margin-bottom: 30px;
-    font-weight: 300;
-
 }
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.hover_segment p {
     font-size: 18px;
     color: #fff;
     line-height: 34px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .sub_ct2 .projects>.inner_1280>.flex_box>div>.hover_segment p.sub {
@@ -978,7 +975,6 @@ footer .inner .copy {
     color: #fff;
     text-align: center;
     margin-top: 80px;
-    font-weight: 300;
 }
 
 .sub_ct2 .publication {
@@ -1108,14 +1104,24 @@ footer .inner .copy {
 
 .sub_ct2 .publication .tab_box .tabcontent .right_content .segment p {
     margin-top: 50px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 34px;
+    font-weight: 300;
+}
+
+.sub_ct2 .publication .tab_box .tabcontent .right_content .segment p i {
+    margin-top: 50px;
+    font-size: 17px;
+    line-height: 34px;
+    font-weight: 500;
 }
 
 .sub_ct2 .publication .tab_box .tabcontent .right_content .segment a {
     margin-top: 50px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 34px;
+    color: #203466;
+    font-weight: 500;
     border-bottom: 1px solid #333;
 }
 
@@ -2032,12 +2038,22 @@ input[type=submit] {
         margin-top: 25px;
         font-size: 13px;
         line-height: 24px;
+        font-weight: 300;
+    }
+
+    .sub_ct2 .publication .tab_box .tabcontent .right_content .segment p i {
+        margin-top: 25px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 500;
     }
 
     .sub_ct2 .publication .tab_box .tabcontent .right_content .segment a {
         margin-top: 25px;
         font-size: 13px;
+        font-weight: 500;
         line-height: 24px;
+        color: #203466;
     }
 .inner_1280 {
     padding: 0 15px;
